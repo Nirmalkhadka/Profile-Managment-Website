@@ -1,0 +1,157 @@
+/*sign in page*/
+
+:root {
+    --main-color: #ffb43a;
+    --hover-color: hsl(37, 94%, 57%);
+    --body-color: #1e1e2a;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #02022f;
+    color: var(--text-color);
+}
+
+.body-section {
+    height: 91.5vh;
+    /*width: 100vw;*/
+}
+.logo-section{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.logo {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.sign-in-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+}
+
+.form-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 40px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+
+.sign-in-heading {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 38px;
+}
+
+.email-container,
+.password-container,
+.sign-in-container,
+.username-container,
+.number-container {
+    width: 300px;
+    height: 46.5px;
+    font-size: 15px;
+    color: black;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+
+.password-container {
+    margin-top: 15px;
+}
+
+.sign-in-container {
+    margin-top: 49px;
+    margin-bottom: 39px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: red;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 315px;
+}
+
+.signup-desc {
+    margin-top: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+.sign-up-text {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    /* padding-top: 10px; */
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*copyright section*/
+
+.copyright-section {
+    margin-top: 15px;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright-section p {
+    margin-right: 15px;
+}
+
+.line {
+    padding-right: 15px;
+    border-right: 1px solid var(--main-color);
+}
+
+.footer-outer-section {
+    margin-left: 9%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}

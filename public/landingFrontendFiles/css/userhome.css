@@ -1,0 +1,36 @@
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    scroll-behavior: smooth;
+
+}
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+.userheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 2rem 9%; */
+    padding: 2rem 4% 1rem 25%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    z-index: 100;
+    transition: .3s;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }

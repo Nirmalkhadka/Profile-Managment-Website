@@ -1,0 +1,35 @@
+/*comments page*/
+
+.user-container{
+    /*width: 76vw;*/
+    /*height: 100vh;*/
+    padding-left: 25px;
+    margin-right: 25px;
+    
+}
+
+
+.eye-icon{
+    font-size: 20px;
+    background-color: green;
+    padding: 3px;
+    color: var(--main-color);
+    border-radius: 7px;
+    margin-right: 6px;
+}
+.delete-icon{
+    font-size: 20px;
+    background-color: red;
+    padding: 3px;
+    color: var(--main-color);
+    border-radius: 7px;
+}
+
+.movie-name{
+    font-size: 15px;
+    color: var(--main-color);
+    padding-bottom: 3px;
+}
+.user-email{
+    font-size: 15px;
+}

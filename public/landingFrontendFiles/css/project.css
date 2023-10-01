@@ -1,0 +1,288 @@
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    scroll-behavior: smooth;
+
+}
+:root{
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+/* bubbles */
+
+.bubbles{
+    
+    /* bottom: -1500px !important; */
+    bottom: -0 !important;
+    z-index: -100;
+  }
+
+/* member */
+
+.members-cont{
+    margin-top: 0.5rem !important;
+}
+
+/* project section */
+
+.project{
+    padding: 1rem 25% 0 3% !important;
+}
+
+
+.main-cont-main{
+    margin-left: 20vw;
+    margin-right: 4rem;
+    margin-top: 5.5rem;
+    width: 100%;
+    
+    
+}
+.main-cont-first{
+    margin-top: 4rem;
+}
+
+.main-cont{
+    
+    /* height: 100vh; */
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.hello{
+    font-size: 1.7rem;
+    color: white;
+    margin-left: 2rem;
+    
+}
+.role{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 60px;
+    margin-left: 2rem;
+}
+.name{
+    font-size: 3rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(6, 80, 80);
+    margin-left: 2rem;
+}
+
+.see-more{
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 2rem;
+}
+.see-more a{
+    color: rgb(9, 52, 52);
+}
+
+
+
+.main-cont-img{
+    margin-top: 4rem;
+}
+
+.main-cont-img img{
+    width: 45vw;
+    border-radius: 20px;
+}
+
+.custom-hr{
+    border: none;
+    height: 1px;
+    background-color: #fbfcfd;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    
+    border-radius: 15px;
+
+}
+
+.about-desc{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-desc p{
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.projects-heading{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+}
+
+.projects-heading h3{
+    color: white;
+    font-size: 2rem;
+    /* margin-bottom: 15vh; */
+    
+}
+
+
+.project-card-cont{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 6em;
+    margin-bottom: 10vh;
+    margin-left: 3rem;
+    /* margin-right: 3rem; */
+}
+
+
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 250px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+    background: var(--second-bg-color);
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  
+  .card:hover {
+    height: 330px;
+  }
+  
+  .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-80px);
+    z-index: 99;
+  }
+  
+  .imgbox img {
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .content {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  
+  .card:hover > .content {
+    opacity: 1;
+    transform: translateY(-130px);
+    
+  }
+  
+  .content h2 {
+    color: var(--text-color);
+  }
+
+  .see-more-project{
+    
+    
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+  }
+
+  .see-more-project:hover{
+    color: var(--main-color);
+    
+  }
+
+  .see-more-project::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.see-more-project:hover::before{
+    width: 100%;
+}
+
+  .see-more-project a{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+  }
+
+.card-button{
+    text-align: center; 
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    position: absolute; 
+    bottom: -3rem; 
+    left: -0;
+}
+
+.card-button .bx{
+    font-size: 1.6rem;
+}
+
+.card-button .bxs-trash{
+    color: rgb(173, 24, 24);
+    
+}
+
+.card-button .bxs-edit{
+    color: rgb(24, 173, 91);
+    
+}
+
+/* contact */
+
+.contact form {
+    max-width: 65rem !important;
+    
+}
+
+

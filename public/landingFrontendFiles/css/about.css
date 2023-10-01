@@ -1,0 +1,258 @@
+.skills_section{
+    
+    padding: 0px 13%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+.skills_head h2 span{
+    color: rgb(15, 84, 84);
+}
+
+.skills_head p{
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+
+.info p{
+    font-size: 1.3rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 100%;
+    height: .7rem;
+    background-color: rgb(16, 115, 115);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.skill_bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 100%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .css{
+    width: 100%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 100%;
+    animation: sass 2s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .js{
+    width: 100%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .react{
+    width: 100%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .node{
+    width: 100%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .express{
+    width: 100%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 100%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 100%;
+    }
+}
+
+
+
+
+/* education */
+
+.row{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 4rem;
+    
+}
+.contents{
+    /* width: 70%; */
+}
+
+.col  .title{
+    color: white;
+}
+
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid white;
+    /* border-right: 2px solid white; */
+}
+
+.col .contents .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+    border: 1px solid #eaeaea;
+    background-color: darkcyan;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 12px 0px #ccc;
+}
+
+.col .contents .box :hover{
+    /* box-shadow: 0px 3px 12px 0px #ccc; */
+    border: 2px solid transparent;
+}
+
+.col .contents .box::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    /* left: calc(100% + 22px); */
+    top: 0;
+    /* right: 0; */
+    background-color: #11a372;
+    border: 2px solid white;
+}
+
+
+
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+
+}
+.box-img{
+    margin-right: 2rem;
+    
+}
+
+.box-img img{
+    height: 10vh;
+    width: auto;
+}
+
+.box h4{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-right: 2rem;
+}
+
+.box-detail h3{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.box-detail p{
+    font-size: 1.3rem;
+    color: white;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }

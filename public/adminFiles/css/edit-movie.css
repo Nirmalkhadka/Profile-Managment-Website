@@ -1,0 +1,29 @@
+.upload-movie-inputss{
+	width: 90%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #0e1267;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding-left: 25px;
+    position: absolute;
+    bottom: 44vh;
+
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-trailer-inputss{
+	width: 90%;
+    height: 50px;
+    font-size: 20px;
+    background-color: #0e1267;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding-left: 25px;
+    position: absolute;
+    bottom: 28vh;
+    opacity: 0;
+    cursor: pointer;
+}
+
